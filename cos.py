@@ -32,7 +32,7 @@ if aux >= 0 and aux < 90:
 
 elif aux >= 90 and aux < 180:
     ang = 180 - aux
-    sinal = 1
+    sinal = -1
 
 elif aux >= 180 and aux < 270:
     ang = aux - 180
@@ -40,12 +40,12 @@ elif aux >= 180 and aux < 270:
     
 else:
     ang = 360 - aux 
-    sinal = -1 
+    sinal = 1 
 
 if ang <= 45:
-    result = sinal * (seno(r(ang)))
+    result = sinal * (cos(r(ang))) 
 else:
-    result = sinal * (cos(r(90-ang)))
+    result = sinal * (seno(r(90-ang)))
 
-print("seno calculado: ", result)
-print("seno python: ", math.sin(r(aux))) 
+print("cosseno calculado: ", result)
+print("cosseno python: ", math.cos(r(aux))) 
