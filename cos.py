@@ -48,4 +48,5 @@ else:
     result = sinal * (seno(r(90-ang)))
 
 print("cosseno calculado: ", result)
-print("cosseno python: ", math.cos(r(aux))) 
+print("cosseno python: ", math.cos(r(aux)))
+#testando um bagulho no git
